@@ -8,8 +8,6 @@
 Cap funció mostrarà res per pantalla llevat que es diga el contrari.
 :::
 
-Nota
-
 1. Escriu un programa que demane dos nombres reals per teclat i mostre per pantalla el resultat de multiplicar-los. Implementa i utilitza la funció:  
 
 ::: tabs
