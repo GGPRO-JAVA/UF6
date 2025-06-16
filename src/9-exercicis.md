@@ -1,5 +1,134 @@
 # Exercicis
 
+## Exercicis - Nivell bàsic
+
+### Exercici 1
+
+a) Escriu una funció que retorne la suma dels valors d’un vector d’enters.  
+b) Escriu una funció que retorne la mitjana dels valors d’un vector d’enters.  
+c) Escriu una funció que retorne el valor màxim d’un vector d’enters.  
+d) Escriu un programa que cree un vector amb N valors enters (generats de forma aleatòria) i mostre la suma, la mitjana i el màxim.  
+
+### Exercici 2
+
+a) Escriu una funció que retorne quantes vocals conté una cadena de text.  
+b) Escriu una funció que retorne quants espais conté una cadena de text.  
+c) Escriu una funció que retorne quantes consonants conté una cadena de text.  
+d) Escriu un programa que llig una frase per teclat i mostre el nombre de vocals, el nombre d'espais i el nombre consonants.  
+
+### Exercici 3
+
+a) Escriu una funció que rebrà una cadena i retornarà la contrària (inversa).  
+b) Escriu una funció que rebrà dos cadenes i retornarà `true` o `false` en funció de si són iguals o no.  
+c) Escriu un programa que demana per teclat una paraula i mostre si és palíndrom usant les funcions anteriors.  
+
+## Exercicis - Nivell mitjà
+
+### Exercici 4
+
+a) Escriu una funció que mostre un menú amb les opcions: sumar, restar, multiplicar, dividir i acabar el programa.  
+b) Escriu una funció que retorne la suma de dos nombres rebuts per paràmetres.  
+c) Escriu una funció que retorne la resta de dos nombres rebuts per paràmetres.  
+d) Escriu una funció que retorne la multiplicació de dos nombres rebuts per paràmetres.  
+e) Escriu una funció que retorne la divisió de dos nombres rebuts per paràmetres (tenint en compte la divisió per zero).  
+f) Escriu un programa que demane dos nombres, mostre el menú i permeta triar una opció. Ho farà fins que l'usuari seleccione l'opció d'eixir del programa.  
+
+### Exercici 5
+
+Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència i mostrar l’estat d’assistència de tots els estudiants. Quan l’usuari vulga afegir un estudiant, el programa demanarà el nom i l’incorporarà a la llista de persones matriculades només si no hi és ja, assignant-li automàticament l’estat de no assistit; si el nom ja existeix, no fa cap canvi. Quan l’usuari tria marcar assistència, el sistema demana el nom de l’estudiant i, si el troba a la llista, canvia el seu estat al de assistit, i si no existeix, informa que no es pot marcar l’assistència d’un estudiant desconegut. Quan l’usuari demana veure els assistents, el programa mostrarà tots els noms i si han assistit o no. Finalment, l'usuari podrà finalitzar quan vulga l'execució del programa.
+
+<!--
+a) Escriu una funció que mostre un menú amb les opcions: afegir nom, marcar assistència, mostrar assistents i eixir del programa.  
+b) Escriu una funció per afegir un nom, demanat per teclat, a la llista d’estudiants (si no està ja). Marcarà l'assistència com a `false`.  
+c) Escriu una funció que demane un nom i marque l'assistència com a `true` si ja està a la llista. Mostrarà un missatge en cas de no estar a la llista.  
+d) Escriu una funció que mostre tots els estudiants, junt amb la seua assistència.  
+e) Escriu un programa que utilitze les funcions anteriors per gestionar l’assistència d’una classe.  
+-->
+### Exercici 6
+
+Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les notes de les cinc assignatures. A partir d’aquest registre, qualsevol vegada que l’usuari ho sol·licite, el programa mostrarà el llistat d'alumnes amb mitjana de notes superior a 9. També ofereix la possibilitat de determinar quin alumne presenta la variabilitat de notes més gran, és a dir, amb major diferència entre la seva nota més alta i la més baixa.
+
+<!--
+Una escola ha de gestionar les notes d’un grup d’alumnes en diverses assignatures. Vol automatitzar el càlcul de mitjanes i detecció d’alumnes destacats.
+
+a) Implementa una funció que rep un vector i retorna la mitjana dels seus valors.
+b) Implementa una funció que permeta afegir alumnes a una estructura clau-valor, on la clau serà el nom d'un alumne i el valor serà un vector de tamany 5 per a les notes. Per simplicitat, les notes poden ser generades de forma aleatòria.  
+c) Implementa una funció que, donat el llistat d'alumnes, retorne un llistat dels noms dels alumnes amb nota superior a 9.  
+d) Implementa una funció que, donat un vector numèric qualsevol, retorne la màxima diferència entre el seu valor màxim i mínim.  
+
+```plaintext
+Per exemple, donat [3, 1, 8] retornarà la distància màxima: 8 - 1 = 7. Retornarà 7.
+```
+
+e) Afig una funció que retorne el nom de l'alumne amb més variabilitat de notes (diferència entre màxima i mínima).  
+f) Escriu una funció que mostre les distintes opcions que tindrà el programa (no tots els mètodes implementats anteriorment seran opcions).  
+g) Escriu un programa que integre totes les funcions anteriors.
+-->
+
+## Exercicis - Recursivitat
+
+### Exercici R1
+
+Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s’indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
+
+a) Implementa una funcionalitat que, a partir d’una llista de revisions de l’animal, permeta comptar quantes revisions se li han realitzat en total. Cal recórrer la llista de forma recursiva i retornar la suma dels valors.  
+b) Ara es vol saber si l’animal va tindre alguna edat on va rebre més d’una revisió. Implementa una funcionalitat que, a partir d’eixa mateixa llista, recórrega recursivament les revisions i retorne un llistat amb totes les edats en què es feren més d’una revisió.  
+c) Determina l’edat en què l’animal va tindre més revisions. En cas d’empat, pots tornar la menor edat. El càlcul s’ha de fer de forma recursiva, comparant les revisions entre posicions.  
+d) Comprova si existeix alguna edat en què no es va fer cap revisió. Has de retornar un booleà (`true` si n’hi ha almenys una, `false` en cas contrari), fent el recorregut recursivament.  
+e) Genera una cadena de text que mostre totes les edats i el nombre de revisions fetes en cadascuna, separades per comes. El format seria per exemple: `"Edat 0: 1 revisió, Edat 1: 0 revisions, Edat 2: 2 revisions"`. El format ha de mantindre l’ordre original i generar-se de forma recursiva.  
+
+### Exercici R2
+
+Estàs fent una aplicació per a comprovar si una contrasenya conté algun caràcter repetit. Les contrasenyes són cadenes de lletres i números (sense símbols ni espais).
+
+a) Fes una funció que, a partir d’una cadena de caràcters, torne una nova cadena on cada lletra només aparega una vegada (eliminant duplicats), mantenint l’ordre original. Fes-ho de manera recursiva.  
+b) Fes una altra funció que, a partir d'una contrasenya, retorne un llistat amb les lletres repetides.  
+c) Implementa una funció que comprove, de manera recursiva, si la contrasenya conté dos caràcters consecutius iguals. Per exemple, en "aabb1c" trobaria "aa" i retornaria `true`. Si no n’hi ha cap repetició consecutiva, ha de retornar `false`.  
+d) Fes una funció recursiva que compte quants dígits conté la contrasenya. Per exemple, "c0ntr4senya12" conté 4 dígits (0, 4, 1, 2) i hauria de retornar 4.  
+e) Implementa una funció recursiva que torne una versió encriptada de la contrasenya invertint l’ordre dels caràcters. És a dir, donada "abc123" retornaria "321cba".  
+
+### Exercici R3
+
+Una empresa té una estructura organitzativa on cada empleat pot tindre subordinats, i estos subordinats poden tindre al seu torn més persones al seu càrrec.
+
+Cal crear un sistema que permeta calcular quantes persones estan sota la supervisió directa i indirecta d’un gerent específic. Per exemple, si Joan és gerent de Maria i Pere, i Maria supervisa Anna i Carles, aleshores Joan supervisa indirectament un total de 4 persones.
+
+::: tip NOTA
+L'estructura organitzativa dels empleats s'emmagatzema en una estructura clau-valor, on loa clau és el nom d'un empleat i el valor és el llistat d'empleats al seu càrrec.
+:::
+
+### Exercici R4
+
+Estàs desenvolupant un explorador de fitxers per a una aplicació d’escriptori. Els usuaris poden navegar per carpetes que contenen fitxers i altres carpetes, les quals al seu torn poden contindre més fitxers i carpetes.
+
+Implementa una funcionalitat que permeta buscar un fitxer específic pel nom en tot el sistema de carpetes. El programa ha de revisar la carpeta actual, després entrar en cada subcarpeta i buscar-hi, i així successivament fins a trobar el fitxer o determinar que no existeix.
+
+<!--
+### Exercici 
+
+a) Escriu una funció que genere i retorne un nombre enter aleatori entre 1 i 100.  
+b) Escriu una funció que demane a l’usuari que introduïsca un nombre i el compare amb el secret. Retornarà una cadena o altra en funció del resultat:  
+
+- "és major que" si el nombre triat és més gran que el secret.
+- "és menor que" si el nombre triat és més menut que el secret.
+- "és" si l'usuari ha encertat.
+
+c) Escriu un programa que utilitze les funcions anteriors per a jugar fins que s'encerte el nombre secret. S'anirà informant del resultat:
+
+```plaintext
+13 és menor que el número secret.
+62 és major que el número secret.
+26 és el número secret!
+```
+-->
+
+
+
+
+
+
+<!--
+
 ## 1. Funcions
 
 ## 1.1. Funcions - Nivell A
@@ -124,8 +253,8 @@ double intermedi1aN(int n)
 
 ![Triangle a](/uf6/triangle_a.jpg)
 
-15.  Escriu un programa que cree un array de grandària 100 amb els primers 100 nombres naturals. Després mostra la suma total i la mitjana. Implementa una funció que calcule la suma d'un array i una altra que calcule la mitjana d'un array.
-16.  Escriu un programa que cree un array de la grandària indicada per teclat i després l'emplene amb valors aleatoris (utilitza Math.random()). Implementa la funció que emplena un array amb valors aleatoris.
+15.  Escriu un programa que cree un vector de grandària 100 amb els primers 100 nombres naturals. Després mostra la suma total i la mitjana. Implementa una funció que calcule la suma d'un vector i una altra que calcule la mitjana d'un vector.
+16.  Escriu un programa que cree un vector de la grandària indicada per teclat i després l'emplene amb valors aleatoris (utilitza Math.random()). Implementa la funció que emplena un vector amb valors aleatoris.
 
 ## 1.3. Funcions - Nivell C
 
@@ -241,25 +370,25 @@ Así tens una descripció pas a pas de l'execució:
    - Recursió amb índex = 1 sobre {A, B, C}
 2. Intercanvia A amb B
    - elements = {B, A, C}
-   - Recursió amb índex = 1 sobre aquest array
+   - Recursió amb índex = 1 sobre aquest vector
 3. Intercanvia A amb C
    - elements = {C, B, A}
-   - Recursió amb índex = 1 sobre aquest array
+   - Recursió amb índex = 1 sobre aquest vector
 ```
 
 **Segona crida (índex 1):**
 
 ```
-1. De l'array {A, B, C}:
+1. De l'vector {A, B, C}:
    - Intercanvia B amb B (no canvia)
      - Imprimeix {A, B, C}
-2. De l'array {B, A, C}:
+2. De l'vector {B, A, C}:
    - Intercanvia B amb A (no canvia)
      - Recursió amb índex = 2 sobre {B, A, C}
    - Intercanvia B amb C
      - elements = {B, C, A}
-     - Recursió amb índex = 2 sobre aquest array
-3. De l'array {C, B, A}:
+     - Recursió amb índex = 2 sobre aquest vector
+3. De l'vector {C, B, A}:
    - Intercanvia B amb C (no canvia)
      - Recursió amb índex = 2 sobre {C, B, A}
 ```
@@ -511,3 +640,6 @@ e) Aneu ara a la classe **UF06Diverses** i elimineu la paraula **public** en la 
 f) Restaureu la paraula public en la funció esPrimer i elimineu ara la paraula **static**. A continuació executeu el programa **UF06Exercici22.java**. Quin error dona? Què significa?
 
 g) Genereu la documentació del programa **UF06Exercici22.java**. Açò es fa des del menú **Run/Generate Javadoc**.
+
+
+-->
