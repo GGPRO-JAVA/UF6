@@ -87,7 +87,7 @@ public static void funcion1(int x[]) {
 }
 // El mateix succeeix en aquest exemple, perdem la referència al String original
 public static void funcion2(String x) {
-  x = “Hola”; // x apuntarà a un nou String, l'original queda intacte
+  x = "Hola"; // x apuntarà a un nou String, l'original queda intacte
   // el que fem ací amb x no afectarà el String original
 }
 ```
