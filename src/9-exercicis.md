@@ -4,9 +4,9 @@
 
 ### Exercici 1
 
-a) Escriu una funció que retorne la suma dels valors d’un vector d’enters.  
-b) Escriu una funció que retorne la mitjana dels valors d’un vector d’enters.  
-c) Escriu una funció que retorne el valor màxim d’un vector d’enters.  
+a) Escriu una funció que retorne la suma dels valors d'un vector d'enters.  
+b) Escriu una funció que retorne la mitjana dels valors d'un vector d'enters.  
+c) Escriu una funció que retorne el valor màxim d'un vector d'enters.  
 d) Escriu un programa que cree un vector amb N valors enters (generats de forma aleatòria) i mostre la suma, la mitjana i el màxim.  
 
 ### Exercici 2
@@ -35,21 +35,21 @@ f) Escriu un programa que demane dos nombres, mostre el menú i permeta triar un
 
 ### Exercici 5
 
-Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència i mostrar l’estat d’assistència de tots els estudiants. Quan l’usuari vulga afegir un estudiant, el programa demanarà el nom i l’incorporarà a la llista de persones matriculades només si no hi és ja, assignant-li automàticament l’estat de no assistit; si el nom ja existeix, no fa cap canvi. Quan l’usuari tria marcar assistència, el sistema demana el nom de l’estudiant i, si el troba a la llista, canvia el seu estat al de assistit, i si no existeix, informa que no es pot marcar l’assistència d’un estudiant desconegut. Quan l’usuari demana veure els assistents, el programa mostrarà tots els noms i si han assistit o no. Finalment, l'usuari podrà finalitzar quan vulga l'execució del programa.
+Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència i mostrar l'estat d'assistència de tots els estudiants. Quan l'usuari vulga afegir un estudiant, el programa demanarà el nom i l'incorporarà a la llista de persones matriculades només si no hi és ja, assignant-li automàticament l'estat de no assistit; si el nom ja existeix, no fa cap canvi. Quan l'usuari tria marcar assistència, el sistema demana el nom de l'estudiant i, si el troba a la llista, canvia el seu estat al de assistit, i si no existeix, informa que no es pot marcar l'assistència d'un estudiant desconegut. Quan l'usuari demana veure els assistents, el programa mostrarà tots els noms i si han assistit o no. Finalment, l'usuari podrà finalitzar quan vulga l'execució del programa.
 
 <!--
 a) Escriu una funció que mostre un menú amb les opcions: afegir nom, marcar assistència, mostrar assistents i eixir del programa.  
-b) Escriu una funció per afegir un nom, demanat per teclat, a la llista d’estudiants (si no està ja). Marcarà l'assistència com a `false`.  
+b) Escriu una funció per afegir un nom, demanat per teclat, a la llista d'estudiants (si no està ja). Marcarà l'assistència com a `false`.  
 c) Escriu una funció que demane un nom i marque l'assistència com a `true` si ja està a la llista. Mostrarà un missatge en cas de no estar a la llista.  
 d) Escriu una funció que mostre tots els estudiants, junt amb la seua assistència.  
-e) Escriu un programa que utilitze les funcions anteriors per gestionar l’assistència d’una classe.  
+e) Escriu un programa que utilitze les funcions anteriors per gestionar l'assistència d'una classe.  
 -->
 ### Exercici 6
 
-Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les notes de les cinc assignatures. A partir d’aquest registre, qualsevol vegada que l’usuari ho sol·licite, el programa mostrarà el llistat d'alumnes amb mitjana de notes superior a 9. També ofereix la possibilitat de determinar quin alumne presenta la variabilitat de notes més gran, és a dir, amb major diferència entre la seva nota més alta i la més baixa.
+Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les notes de les cinc assignatures. A partir d'aquest registre, qualsevol vegada que l'usuari ho sol·licite, el programa mostrarà el llistat d'alumnes amb mitjana de notes superior a 9. També ofereix la possibilitat de determinar quin alumne presenta la variabilitat de notes més gran, és a dir, amb major diferència entre la seva nota més alta i la més baixa.
 
 <!--
-Una escola ha de gestionar les notes d’un grup d’alumnes en diverses assignatures. Vol automatitzar el càlcul de mitjanes i detecció d’alumnes destacats.
+Una escola ha de gestionar les notes d'un grup d'alumnes en diverses assignatures. Vol automatitzar el càlcul de mitjanes i detecció d'alumnes destacats.
 
 a) Implementa una funció que rep un vector i retorna la mitjana dels seus valors.
 b) Implementa una funció que permeta afegir alumnes a una estructura clau-valor, on la clau serà el nom d'un alumne i el valor serà un vector de tamany 5 per a les notes. Per simplicitat, les notes poden ser generades de forma aleatòria.  
@@ -69,29 +69,29 @@ g) Escriu un programa que integre totes les funcions anteriors.
 
 ### Exercici R1
 
-Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s’indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
+Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
 
-a) Implementa una funcionalitat que, a partir d’una llista de revisions de l’animal, permeta comptar quantes revisions se li han realitzat en total. Cal recórrer la llista de forma recursiva i retornar la suma dels valors.  
-b) Ara es vol saber si l’animal va tindre alguna edat on va rebre més d’una revisió. Implementa una funcionalitat que, a partir d’eixa mateixa llista, recórrega recursivament les revisions i retorne un llistat amb totes les edats en què es feren més d’una revisió.  
-c) Determina l’edat en què l’animal va tindre més revisions. En cas d’empat, pots tornar la menor edat. El càlcul s’ha de fer de forma recursiva, comparant les revisions entre posicions.  
-d) Comprova si existeix alguna edat en què no es va fer cap revisió. Has de retornar un booleà (`true` si n’hi ha almenys una, `false` en cas contrari), fent el recorregut recursivament.  
-e) Genera una cadena de text que mostre totes les edats i el nombre de revisions fetes en cadascuna, separades per comes. El format seria per exemple: `"Edat 0: 1 revisió, Edat 1: 0 revisions, Edat 2: 2 revisions"`. El format ha de mantindre l’ordre original i generar-se de forma recursiva.  
+a) Implementa una funcionalitat que, a partir d'una llista de revisions de l'animal, permeta comptar quantes revisions se li han realitzat en total. Cal recórrer la llista de forma recursiva i retornar la suma dels valors.  
+b) Ara es vol saber si l'animal va tindre alguna edat on va rebre més d'una revisió. Implementa una funcionalitat que, a partir d'eixa mateixa llista, recórrega recursivament les revisions i retorne un llistat amb totes les edats en què es feren més d'una revisió.  
+c) Determina l'edat en què l'animal va tindre més revisions. En cas d'empat, pots tornar la menor edat. El càlcul s'ha de fer de forma recursiva, comparant les revisions entre posicions.  
+d) Comprova si existeix alguna edat en què no es va fer cap revisió. Has de retornar un booleà (`true` si n'hi ha almenys una, `false` en cas contrari), fent el recorregut recursivament.  
+e) Genera una cadena de text que mostre totes les edats i el nombre de revisions fetes en cadascuna, separades per comes. El format seria per exemple: `"Edat 0: 1 revisió, Edat 1: 0 revisions, Edat 2: 2 revisions"`. El format ha de mantindre l'ordre original i generar-se de forma recursiva.  
 
 ### Exercici R2
 
 Estàs fent una aplicació per a comprovar si una contrasenya conté algun caràcter repetit. Les contrasenyes són cadenes de lletres i números (sense símbols ni espais).
 
-a) Fes una funció que, a partir d’una cadena de caràcters, torne una nova cadena on cada lletra només aparega una vegada (eliminant duplicats), mantenint l’ordre original. Fes-ho de manera recursiva.  
+a) Fes una funció que, a partir d'una cadena de caràcters, torne una nova cadena on cada lletra només aparega una vegada (eliminant duplicats), mantenint l'ordre original. Fes-ho de manera recursiva.  
 b) Fes una altra funció que, a partir d'una contrasenya, retorne un llistat amb les lletres repetides.  
-c) Implementa una funció que comprove, de manera recursiva, si la contrasenya conté dos caràcters consecutius iguals. Per exemple, en "aabb1c" trobaria "aa" i retornaria `true`. Si no n’hi ha cap repetició consecutiva, ha de retornar `false`.  
+c) Implementa una funció que comprove, de manera recursiva, si la contrasenya conté dos caràcters consecutius iguals. Per exemple, en "aabb1c" trobaria "aa" i retornaria `true`. Si no n'hi ha cap repetició consecutiva, ha de retornar `false`.  
 d) Fes una funció recursiva que compte quants dígits conté la contrasenya. Per exemple, "c0ntr4senya12" conté 4 dígits (0, 4, 1, 2) i hauria de retornar 4.  
-e) Implementa una funció recursiva que torne una versió encriptada de la contrasenya invertint l’ordre dels caràcters. És a dir, donada "abc123" retornaria "321cba".  
+e) Implementa una funció recursiva que torne una versió encriptada de la contrasenya invertint l'ordre dels caràcters. És a dir, donada "abc123" retornaria "321cba".  
 
 ### Exercici R3
 
 Una empresa té una estructura organitzativa on cada empleat pot tindre subordinats, i estos subordinats poden tindre al seu torn més persones al seu càrrec.
 
-Cal crear un sistema que permeta calcular quantes persones estan sota la supervisió directa i indirecta d’un gerent específic. Per exemple, si Joan és gerent de Maria i Pere, i Maria supervisa Anna i Carles, aleshores Joan supervisa indirectament un total de 4 persones.
+Cal crear un sistema que permeta calcular quantes persones estan sota la supervisió directa i indirecta d'un gerent específic. Per exemple, si Joan és gerent de Maria i Pere, i Maria supervisa Anna i Carles, aleshores Joan supervisa indirectament un total de 4 persones.
 
 ::: tip NOTA
 L'estructura organitzativa dels empleats s'emmagatzema en una estructura clau-valor, on loa clau és el nom d'un empleat i el valor és el llistat d'empleats al seu càrrec.
@@ -99,7 +99,7 @@ L'estructura organitzativa dels empleats s'emmagatzema en una estructura clau-va
 
 ### Exercici R4
 
-Estàs desenvolupant un explorador de fitxers per a una aplicació d’escriptori. Els usuaris poden navegar per carpetes que contenen fitxers i altres carpetes, les quals al seu torn poden contindre més fitxers i carpetes.
+Estàs desenvolupant un explorador de fitxers per a una aplicació d'escriptori. Els usuaris poden navegar per carpetes que contenen fitxers i altres carpetes, les quals al seu torn poden contindre més fitxers i carpetes.
 
 Implementa una funcionalitat que permeta buscar un fitxer específic pel nom en tot el sistema de carpetes. El programa ha de revisar la carpeta actual, després entrar en cada subcarpeta i buscar-hi, i així successivament fins a trobar el fitxer o determinar que no existeix.
 
@@ -107,7 +107,7 @@ Implementa una funcionalitat que permeta buscar un fitxer específic pel nom en 
 ### Exercici 
 
 a) Escriu una funció que genere i retorne un nombre enter aleatori entre 1 i 100.  
-b) Escriu una funció que demane a l’usuari que introduïsca un nombre i el compare amb el secret. Retornarà una cadena o altra en funció del resultat:  
+b) Escriu una funció que demane a l'usuari que introduïsca un nombre i el compare amb el secret. Retornarà una cadena o altra en funció del resultat:  
 
 - "és major que" si el nombre triat és més gran que el secret.
 - "és menor que" si el nombre triat és més menut que el secret.
@@ -197,7 +197,7 @@ double milles_a_quilometres(int milles)
 
 :::
 
-6. Escriu un programa que demane cinc preus i mostre per pantalla el preu de venda de cadascun després d’aplicar-li un 21% d'IVA. Implementa i utilitza la funció:
+6. Escriu un programa que demane cinc preus i mostre per pantalla el preu de venda de cadascun després d'aplicar-li un 21% d'IVA. Implementa i utilitza la funció:
 
 ::: tabs
 == Java
@@ -224,7 +224,7 @@ double areaRectangul(double ample, double alt)
 
 :::
 
-8. Escriu un programa que demane un valor N sencer i després mostre: el sumatori des d’1 a N, el productori d'1 a N i el valor intermedi entre 1 i N. Implementa i utilitza les funcions:
+8. Escriu un programa que demane un valor N sencer i després mostre: el sumatori des d'1 a N, el productori d'1 a N i el valor intermedi entre 1 i N. Implementa i utilitza les funcions:
 
 ::: tabs
 == Java
@@ -248,7 +248,7 @@ double intermedi1aN(int n)
 10. Realitza un programa que llija una data introduint el dia, mes i any per separat i ens diga si la data és correcta o no. Suposarem que tots els mesos tenen 30 dies. S'ha de crear una funció on li passem les dades i retorne si és correcta o no.
 11. Realitza un programa que escriga la taula de multiplicar d'un número introduït per teclat. Per a això implementa una funció que reba com a paràmetre un nombre enter i mostre per pantalla la taula de multiplicar d'aquest número.
 12. Realitza un programa que donat un valor en quilòmetres ens el tradueix a milles. El programa ha de tindre una funció que reba com a paràmetre una quantitat en quilòmetres i ens la retorne en milles.
-13. Realitza un programa que calcule el percentatge de descompte que ens han fet en comprar alguna cosa. S'ha de sol·licitar la quantitat sense descompte i la quantitat amb el descompte aplicat. S’ha de crear una funció a la qual li passem tots dos valors i ens retorne el descompte.
+13. Realitza un programa que calcule el percentatge de descompte que ens han fet en comprar alguna cosa. S'ha de sol·licitar la quantitat sense descompte i la quantitat amb el descompte aplicat. S'ha de crear una funció a la qual li passem tots dos valors i ens retorne el descompte.
 14. Escriu una funció que mostre per pantalla un triangle com el de l'exemple. Haurà de rebre dos paràmetres: el caràcter que es desitja imprimir i el nombre de línies del triangle.  
 
 ![Triangle a](/uf6/triangle_a.jpg)
@@ -263,14 +263,14 @@ double intermedi1aN(int n)
 0: "T", 1: "R", 2: "W", 3: "A", 4: "G", 5: "M", 6: "I", 7: "F", 8: "P", 9: "D", 10:"X", 11: "B", 12: "N", 13: "J", 14: "Z", 15: "S", 16: "Q", 17: "V", 18: "H", 19: "L", 20: "C", 21: "K", 22: "E .."  
 Escriu un programa que demane el DNI i mostre per pantalla la lletra associada. Per a això s'haurà de crear una funció a la qual se li passe el número i retorne la lletra.
 
-Exemple: per al DNI 56321122 el NIF és ‘X’.
+Exemple: per al DNI 56321122 el NIF és ‘X'.
 
 19. Realitza un programa que permeta comprovar si una terna de valors sencers (3 valors) s'ajusta a l'equació de Pitàgores: x ² + i ² = z ². El programa sol·licita a l'usuari els valores x, i, z. S'haurà de crear una funció a la qual se li passe x, i, z i retorne si són iguals o no.
 
 Per exemple: 3 ² + 4 ² = 5 ².
 
 20. Escriu un programa que imprisca les taules de multiplicar de l'1 al 10. Implementa una funció que reba un nombre enter com a paràmetre i imprimisca la seua taula de multiplicar.
-21. Escriu un programa que mostre un menú amb 2 opcions: “1.Circumferència” i “2.Àrea”.  
+21. Escriu un programa que mostre un menú amb 2 opcions: "1.Circumferència" i "2.Àrea".  
 En ambdues se li demanarà a l'usuari que introduïsca un radi i després se li mostrarà el càlcul oportú. Implementa les funcions:
 
 ::: tabs
@@ -285,7 +285,7 @@ double area(double r) // Calcula l'àrea i la retorna
 
 :::
 
-Modifica el programa afegint una altra opció anomenada “Volum”, permetent que l'usuari també puga sol·licitar el càlcul del volum. Afig la funció:
+Modifica el programa afegint una altra opció anomenada "Volum", permetent que l'usuari també puga sol·licitar el càlcul del volum. Afig la funció:
 
 ::: tabs
 == Java
@@ -296,9 +296,9 @@ double volum(double r) // Calcula el volum i el retorna
 
 :::
 
-Modifica el programa afegint una altra opció anomenada “Totes” en la qual es demane el radi una sola vegada i es mostren els tres càlculs possibles (circumferència, àrea i volum).
+Modifica el programa afegint una altra opció anomenada "Totes" en la qual es demane el radi una sola vegada i es mostren els tres càlculs possibles (circumferència, àrea i volum).
 
-Modifica el programa anterior de manera que el procés es repetisca una vegada i una altra (mostrar menú &rarr; realitzar el càlcul &rarr; tornar a mostrar menú). Afig una opció més anomenada “Eixir” que acabarà el programa si és triada.
+Modifica el programa anterior de manera que el procés es repetisca una vegada i una altra (mostrar menú &rarr; realitzar el càlcul &rarr; tornar a mostrar menú). Afig una opció més anomenada "Eixir" que acabarà el programa si és triada.
 
 ## 2. Recursivitat
 
@@ -453,7 +453,7 @@ En aquests moments, per a l'UF06 tenim creat el projecte UF06Exercicis que cont�
 
 - Dins del nou paquet creareu dos arxius (o java class): **UF06Diverses.java** i **UF06Geometria.java** dels quals a continuació descrivim el contingut.
 
-- En l’arxiu **UF06Diverses** creareu dos funcions de propòsit general com són la comprovació de si un numero és primer i el número de dígits que conté un número enter. És important que s’incloguen els comentaris amb les etiquetes que comencen per @ per a completar altres aspectes de l’exercici que vorem més endavant. Aquest és el codi que s’hi ha d’incloure:
+- En l'arxiu **UF06Diverses** creareu dos funcions de propòsit general com són la comprovació de si un numero és primer i el número de dígits que conté un número enter. És important que s'incloguen els comentaris amb les etiquetes que comencen per @ per a completar altres aspectes de l'exercici que vorem més endavant. Aquest és el codi que s'hi ha d'incloure:
 
 ::: tabs
 == Java
@@ -503,7 +503,7 @@ public class UF06Diverses {
 
 :::
 
-- Per a l’arxiu **UF06Geometria** crearem també altres dos funcions. Aquest és el codi que hi haureu d’incloure:
+- Per a l'arxiu **UF06Geometria** crearem també altres dos funcions. Aquest és el codi que hi haureu d'incloure:
 
 ::: tabs
 == Java
@@ -538,7 +538,7 @@ public class UF06Geometria {
 
 - Ara ja podeu començar a crear el codi del programa principal, però en aquesta ocasió ho fareu poc a poc per fer unes comprovacions que ens permetran respondre algunes qüestions.
 
-Aneu a crear el programa (arxiu o classe) **UF06Exercici22.java** dins del paquet curs.uf06exercicis (o on tingueu emmagatzemats la resta d’exercicis del tema).
+Aneu a crear el programa (arxiu o classe) **UF06Exercici22.java** dins del paquet curs.uf06exercicis (o on tingueu emmagatzemats la resta d'exercicis del tema).
 
 El primer que haureu de fer és importar aquestes classes per poder utilitzar les funcions matemàtiques creades abans dins.
 
@@ -547,7 +547,7 @@ Un dels estàndards que recomana Java és organitzar les importacions per orde a
 
 :::
 
-Aleshores, heu d’escriure vosaltres les dos importacions de les classes que acabeu de crear, però recordeu que s’ha de citar el paquet on estan, un punt i el nom de la classe. Si no ho feu correctament vos començaran a aparèixer errors quan inclogueu les cridades a les funcions.
+Aleshores, heu d'escriure vosaltres les dos importacions de les classes que acabeu de crear, però recordeu que s'ha de citar el paquet on estan, un punt i el nom de la classe. Si no ho feu correctament vos començaran a aparèixer errors quan inclogueu les cridades a les funcions.
 
 ::: tabs
 == Java
@@ -570,7 +570,7 @@ import java.util.Scanner;
 
 :::
 
-Ara anem a copiar una part del codi del programa principal. El que ens interessa per a aquest exercici és arribar a la línia que haureu d’escriure poc a poc en lloc de copiar.
+Ara anem a copiar una part del codi del programa principal. El que ens interessa per a aquest exercici és arribar a la línia que haureu d'escriure poc a poc en lloc de copiar.
 
 ::: tabs
 == Java
